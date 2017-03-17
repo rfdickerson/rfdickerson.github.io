@@ -1,4 +1,7 @@
 ## Robert F. Dickerson
+### Developer at IBM Cloud
+
+Focused on developer tools for cloud application development.
 
 ### Talks
 
