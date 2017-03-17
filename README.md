@@ -7,4 +7,5 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ### Talks
 
 - [Web server defense: Swift edition](https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/56656), [OSCON 2017](https://conferences.oreilly.com/oscon/oscon-tx)
-- [DevOxx](http://cfp.devoxx.us/2017/talk/XTW-1281/Developer_on_the_Rise_%E2%80%93_Part_2:__Being_serverless_and_Swift..._Is_that_allowed%3F)
+- [Being serverless and Swift... Is that allowed?](http://cfp.devoxx.us/2017/talk/XTW-1281/Developer_on_the_Rise_%E2%80%93_Part_2:__Being_serverless_and_Swift..._Is_that_allowed%3F), [DevOxx](https://devoxx.us/)
+- Swift on the server, [Try!Swift NYC](https://www.tryswift.co/events/2017/nyc#)
