@@ -1,5 +1,9 @@
-
-# Building Cognitive Apps with Watson and Kitura
+---
+layout: post
+title:  "Building Cognitive Apps with Watson and Kitura"
+date:   2017-03-17 15:11:24 -0500
+categories: jekyll update
+---
 
 More and more developers are demanding the use of cognitive features in their applications. That's why IBM Watson is targetting the need by providing many services through Bluemix that can be easily integrated into applications through a REST API. There are many services available on Watson, and they can be divided into major categories such as "language", "speech", "vision", and "data insights". Some very popular services include [Natural Language Understanding](https://www.ibm.com/watson/developercloud/natural-language-understanding.html) for recognizing the meaning behind natural language and [Visual Recognition](https://www.ibm.com/watson/developercloud/visual-recognition.html) for classifying contents in images.
 
@@ -25,13 +29,13 @@ In this tutorial, I will guide you how to take an existing chatroom, and add Wat
 
   A workspace is the way you can express a dialog. Your Watson Conversation service may contain many workspaces for all of your user flows.
 
-  ![Workspace](images/workspaces.png)
+  ![Workspace](/images/workspaces.png)
 
 4. Get the workspace ID
 
   You can select the "drawer" icon next to the workspace card and choose "edit" in order to see your workspace ID. You will need this ID later when you connect your code to this workspace.
 
-  ![Workspace ID](images/workspace-id.png)
+  ![Workspace ID](/images/workspace-id.png)
 
 5. Create intents
 
@@ -45,7 +49,7 @@ In this tutorial, I will guide you how to take an existing chatroom, and add Wat
   - sure
   - yes
 
-  ![Create Intents](images/intents.png)
+  ![Create Intents](/images/intents.png)
 
 6. Create entities
 
@@ -57,21 +61,21 @@ In this tutorial, I will guide you how to take an existing chatroom, and add Wat
   - mayo
   - tomatoes
 
-  ![Create entities](images/entities.png)
+  ![Create entities](/images/entities.png)
 
 7. Design the dialog
 
   You can now design your dialog with the intents and entities you created earlier. Your must create triggers that based on whether it is matched or not, will yield a response from Watson.
 
-  ![Dialog1](images/dialog1.png)
+  ![Dialog1](/images/dialog1.png)
 
-  ![Dialog1](images/dialog2.png)
+  ![Dialog1](/images/dialog2.png)
 
 8. Test your conversation
 
   It's probably a good idea at this point to test your conversation and make sure it's working properly. You can press the dialog bubble icon on the top right to start a simulation of your conversation.
 
-  ![Create entities](images/test-conversation.png)
+  ![Create entities](/images/test-conversation.png)
 
 ## Programming your server
 
@@ -178,7 +182,7 @@ In this tutorial, I will guide you how to take an existing chatroom, and add Wat
     }
     ```
     
-    ![Tell Watson](images/codingconversation.png)
+    ![Tell Watson](/images/codingconversation.png)
     
 10. Add a call to ask Watson right before the `echo` is invoked:
 
@@ -200,11 +204,11 @@ In this tutorial, I will guide you how to take an existing chatroom, and add Wat
  	.build/debug/KituraChatServer
  	```
  
-   ![Run kitura](images/run-kitura.png)	
+   ![Run kitura](/images/run-kitura.png)	
  
  12. Open your browser at http://localhost:8090, and talk to Watson!
  
-   ![conversation](images/conversation2.png)
+   ![conversation](/images/conversation2.png)
  
  
 I hope you enjoyed this tutorial, and feel inspired to add the Watson services to your next Kitura application!
