@@ -1,9 +1,4 @@
 
----
-title: Building Cognitive Apps with Watson and Kitura
-layout: post
----
-
 # Building Cognitive Apps with Watson and Kitura
 
 More and more developers are demanding the use of cognitive features in their applications. That's why IBM Watson is targetting the need by providing many services through Bluemix that can be easily integrated into applications through a REST API. There are many services available on Watson, and they can be divided into major categories such as "language", "speech", "vision", and "data insights". Some very popular services include [Natural Language Understanding](https://www.ibm.com/watson/developercloud/natural-language-understanding.html) for recognizing the meaning behind natural language and [Visual Recognition](https://www.ibm.com/watson/developercloud/visual-recognition.html) for classifying contents in images.
