@@ -22,7 +22,7 @@ url: "http://rfdickerson.github.io" # the base hostname & protocol for your site
 twitter_username: rfdickerson
 github_username:  rfdickerson
 disqus:
-    shortname: rfdickerson
+    shortname: robertfdickerson
 
 # Build settings
 markdown: kramdown
