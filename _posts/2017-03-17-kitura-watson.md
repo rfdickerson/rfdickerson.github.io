@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Building Kitura Apps with Watson"
-date:   2017-03-17 15:11:24 -0500
+date:   2017-03-06 15:11:24 -0500
 categories: swift
 ---
 

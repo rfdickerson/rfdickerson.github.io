@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Creating a React and Kitura app"
+title:  "Scaffold a React app with Bluemix Tools"
 date:   2017-03-17 15:11:24 -0500
 categories: swift
 ---
