@@ -5,7 +5,7 @@ date:   2017-03-17 15:11:24 -0500
 categories: swift
 ---
 
-Learn to scaffold out a complete web application that uses a Kitura server to serve a React-based UI:
+Learn to scaffold out a complete web application that uses a Kitura server to serve a React-based UI. Using the recently released [Bluemix Developer Console](https://www.ibm.com/blogs/bluemix/2017/03/introducing-bluemix-developer-console/) and the [Developer CLI](https://console.ng.bluemix.net/docs/cloudnative/dev_cli.html) you can have something scaffolded out in less then 30 seconds.
 
 # Prerequisites:
 
