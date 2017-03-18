@@ -26,26 +26,26 @@ In this tutorial, I will guide you how to take an existing chatroom, and add Wat
 
     After your conversation service has been created, you will be able to get the username and password for the service. Record these now, you will need it later when we start coding your application.
 
-    ![Get credentials](/images/get_creds.png)
+    ![Get credentials](/images/watson/get_creds.png)
 
 3. Create a new Workspace for your application
 
     A workspace is the way you can express a dialog. Your Watson Conversation service may contain many workspaces for all of your user flows.
 
-    ![Workspace](/images/workspaces.png)
+    ![Workspace](/images/watson/workspaces.png)
 
 4. Get the workspace ID
 
     You can select the "drawer" icon next to the workspace card and choose "edit" in order to see your workspace ID. You will need this ID later when you connect your code to this workspace.
 
-    ![Workspace ID](/images/workspace-id.png)
+    ![Workspace ID](/images/watson/workspace-id.png)
 
 5. Create intents
 
     Intents are the ways Watson understands your users' intent. In other words, you can train the Watson Natural Language classifier with a bunch of examples of ways of expressing an intent like "ordering a sandwich", and in the future, even though your users won't necessarily write their requests exactly how you specified it, through training the language model Watson will select the intent if that request matched it within a certain threshold level.
 
     So for our example, you can add a new intent called "#order" and the values can be:
-    ![Create Intents](/images/intents.png)
+    ![Create Intents](/images/watson/intents.png)
 
    
 
@@ -55,22 +55,22 @@ In this tutorial, I will guide you how to take an existing chatroom, and add Wat
 
     Try adding some @toppings now:
 
-    ![Create entities](/images/entities.png)
+    ![Create entities](/images/watson/entities.png)
 
 
 7. Design the dialog
 
     You can now design your dialog with the intents and entities you created earlier. Your must create triggers that based on whether it is matched or not, will yield a response from Watson.
 
-    ![Dialog1](/images/dialog1.png)
+    ![Dialog1](/images/watson/dialog1.png)
 
-    ![Dialog1](/images/dialog2.png)
+    ![Dialog1](/images/watson/dialog2.png)
 
 8. Test your conversation
 
     It's probably a good idea at this point to test your conversation and make sure it's working properly. You can press the dialog bubble icon on the top right to start a simulation of your conversation.
 
-    ![Create entities](/images/test-conversation.png)
+    ![Create entities](/images/watson/test-conversation.png)
 
 # Programming your server
 
@@ -183,7 +183,7 @@ In this tutorial, I will guide you how to take an existing chatroom, and add Wat
     }
     ```
     
-    ![Tell Watson](/images/codingconversation.png)
+    ![Tell Watson](/images/watson/codingconversation.png)
     
 10. Add a call to ask Watson right before the echo is invoked:
 
@@ -205,12 +205,12 @@ In this tutorial, I will guide you how to take an existing chatroom, and add Wat
     $ .build/debug/KituraChatServer
     ```
  
-    ![Run kitura](/images/run-kitura.png)	
+    ![Run kitura](/images/watson/run-kitura.png)	
  
  12. Open your browser at [http://localhost:8090](http://localhost:8090), and talk to Watson!
  
 
-![conversation 2](/images/conversation2.png)
+![conversation 2](/images/watson/conversation2.png)
  
 ## Conclusion
 
