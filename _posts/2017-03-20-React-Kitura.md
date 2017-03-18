@@ -85,11 +85,11 @@ Learn to scaffold out a complete web application that uses a Kitura server to se
     ![Server running](/images/react/congratulations.png)
 
 
-## Modifing your application
+## Modifying your application
 
 1. Open your project in your favorite editor or IDE
 
-    - If you want to use Xcode, run `swift package generate-xcodeproj` first.
+    - If you want to use Xcode, run "swift package generate-xcodeproj" first.
     - VSCode, Atom, and Sublime are all good choices, too.
 
     ![View code](/images/react/view-code.png)
