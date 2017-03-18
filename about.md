@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Robert Dickerson is a developer at IBM Cloud in Austin, TX.
+Robert F. Dickerson is a software developer at IBM Cloud in Austin, TX and focused on the developer experience for cloud application development. 

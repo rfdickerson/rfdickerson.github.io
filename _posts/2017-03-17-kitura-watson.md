@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "Building Cognitive Apps with Watson and Kitura"
+title:  "Building Kitura Apps with Watson"
 date:   2017-03-17 15:11:24 -0500
-categories: jekyll update
+categories: swift
 ---
+
+# Introduction
 
 More and more developers are demanding the use of cognitive features in their applications. That's why IBM Watson is targetting the need by providing many services through Bluemix that can be easily integrated into applications through a REST API. There are many services available on Watson, and they can be divided into major categories such as "language", "speech", "vision", and "data insights". Some very popular services include [Natural Language Understanding](https://www.ibm.com/watson/developercloud/natural-language-understanding.html) for recognizing the meaning behind natural language and [Visual Recognition](https://www.ibm.com/watson/developercloud/visual-recognition.html) for classifying contents in images.
 
@@ -11,9 +13,10 @@ Because interfacing with REST endpoint using low-level networking calls quickly 
 
 In this tutorial, I will guide you how to take an existing chatroom, and add Watson Conversation to the room, so that the Watson bot can help the participants order sandwiches.
 
+
 ## Cognitive Chatroom: Sandwich shop
 
-### Creating a dialog
+# Creating a dialog
 
 1. Create a new [Watson Conversation service in Bluemix](https://console.ng.bluemix.net/catalog/services/conversation/?taxonomyNavigation=services)
 
@@ -69,7 +72,7 @@ In this tutorial, I will guide you how to take an existing chatroom, and add Wat
 
     ![Create entities](/images/test-conversation.png)
 
-## Programming your server
+# Programming your server
 
 1. Clone the [Kitura Chat Server](https://github.com/IBM-Swift/Kitura-Chat-Server)
 
@@ -209,6 +212,8 @@ In this tutorial, I will guide you how to take an existing chatroom, and add Wat
 
 ![conversation 2](/images/conversation2.png)
  
+## Conclusion
+
 I hope you enjoyed this tutorial, and feel inspired to add the Watson services to your next Kitura application!
 
 Some future directions you can go with this tutorial is:
