@@ -7,6 +7,8 @@ categories: swift
 
 One common workflow that I liked with Node, Ruby, and Python development is that when I change the source code in my application, it is immediately in effect. I wanted something similar for Swift on the server development, where I can set up watchers on my Swift files, and when they change, kick off another build and bring up another instance of the server. [Gulp](http://gulpjs.com/) is a great tool for this purpose. 
 
+![Gulp watcher](/images/gulp/gulp.png)
+
 # Basic Setup
 
 Create a gulpfile.js in the root of your project. In this example, we will assume the server sources are in ./Sources.
@@ -107,5 +109,7 @@ router.all("/", middleware: StaticFileServer(path: "./public"))
 ```
 
 Checkout a fully working example that uses this in action, here:
+
+
 
 [KituraReactDemo](https://github.com/rfdickerson/KituraReactDemo)
