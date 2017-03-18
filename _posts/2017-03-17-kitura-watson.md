@@ -76,8 +76,8 @@ In this tutorial, I will guide you how to take an existing chatroom, and add Wat
 
 1. Clone the [Kitura Chat Server](https://github.com/IBM-Swift/Kitura-Chat-Server)
 
-    ```
-    git clone https://github.com/IBM-Swift/Kitura-Chat-Server
+    ```bash
+    $ git clone https://github.com/IBM-Swift/Kitura-Chat-Server
     ```
 
     Kitura Chat Server is an example application that shows how to build websocket-enabled applications with Kitura. It contains a combination of browser-side JavaScript code and a Kitura server that has a websocket endpoint.
@@ -140,7 +140,7 @@ In this tutorial, I will guide you how to take an existing chatroom, and add Wat
 8. When a user signs in, add Watson as already in the chatroom:
 
 
-    In order for the client to have Watson as an avatar on their chatroom, a message needs to be sent out to the client that makes it aware of a user 'connected' event. The message looks like this: `C:Watson` which means, Watson was connected.
+    In order for the client to have Watson as an avatar on their chatroom, a message needs to be sent out to the client that makes it aware of a user 'connected' event. The message looks like this: "C:Watson" which means, Watson was connected.
     
     ```swift
     public func connection(connection: WebSocketConnection)         
@@ -185,7 +185,7 @@ In this tutorial, I will guide you how to take an existing chatroom, and add Wat
     
     ![Tell Watson](/images/codingconversation.png)
     
-10. Add a call to ask Watson right before the `echo` is invoked:
+10. Add a call to ask Watson right before the echo is invoked:
 
 
     ```swift
@@ -196,13 +196,13 @@ In this tutorial, I will guide you how to take an existing chatroom, and add Wat
 11. Compile your project with
  
     ```bash
-    swift run
+    $ swift run
     ```
    
 12. Run your server
  
     ```bash
-    .build/debug/KituraChatServer
+    $ .build/debug/KituraChatServer
     ```
  
     ![Run kitura](/images/run-kitura.png)	
