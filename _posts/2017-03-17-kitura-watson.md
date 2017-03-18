@@ -41,29 +41,19 @@ In this tutorial, I will guide you how to take an existing chatroom, and add Wat
 
     Intents are the ways Watson understands your users' intent. In other words, you can train the Watson Natural Language classifier with a bunch of examples of ways of expressing an intent like "ordering a sandwich", and in the future, even though your users won't necessarily write their requests exactly how you specified it, through training the language model Watson will select the intent if that request matched it within a certain threshold level.
 
+    So for our example, you can add a new intent called "#order" and the values can be:
     ![Create Intents](/images/intents.png)
 
-    So for our example, you can add a new intent called "#order" and the values can be:
-
-    - could I have a sandwich
-    - I am hungry
-    - I would like a sandwich
-    - sure
-    - yes
-
-    
+   
 
 6. Create entities
 
     Entities are the specifics of information that can come in through the intents. Entities are most likely nouns that help you better service the request. For our example, we will be creating some entity types like, @toppings and @meats.
 
-    ![Create entities](/images/entities.png)
-
     Try adding some @toppings now:
 
-    - lettuce
-    - mayo
-    - tomatoes
+    ![Create entities](/images/entities.png)
+
 
 7. Design the dialog
 
@@ -223,7 +213,7 @@ I hope you enjoyed this tutorial, and feel inspired to add the Watson services t
 
 Some future directions you can go with this tutorial is:
 
-- Make the `Context` specific to a particular user instead of a shared Context across all users in the chatroom.
+- Make the Context specific to a particular user instead of a shared Context across all users in the chatroom.
 
-- Extract the `entities` that were selected from the response and use it to actually persist the sandwich order.
+- Extract the entities that were selected from the response and use it to actually persist the sandwich order.
  
