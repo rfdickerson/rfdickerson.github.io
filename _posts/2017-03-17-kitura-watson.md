@@ -41,6 +41,8 @@ In this tutorial, I will guide you how to take an existing chatroom, and add Wat
 
     Intents are the ways Watson understands your users' intent. In other words, you can train the Watson Natural Language classifier with a bunch of examples of ways of expressing an intent like "ordering a sandwich", and in the future, even though your users won't necessarily write their requests exactly how you specified it, through training the language model Watson will select the intent if that request matched it within a certain threshold level.
 
+    ![Create Intents](/images/intents.png)
+
     So for our example, you can add a new intent called "#order" and the values can be:
 
     - could I have a sandwich
@@ -49,19 +51,19 @@ In this tutorial, I will guide you how to take an existing chatroom, and add Wat
     - sure
     - yes
 
-    ![Create Intents](/images/intents.png)
+    
 
 6. Create entities
 
     Entities are the specifics of information that can come in through the intents. Entities are most likely nouns that help you better service the request. For our example, we will be creating some entity types like, @toppings and @meats.
+
+    ![Create entities](/images/entities.png)
 
     Try adding some @toppings now:
 
     - lettuce
     - mayo
     - tomatoes
-
-    ![Create entities](/images/entities.png)
 
 7. Design the dialog
 
@@ -81,7 +83,9 @@ In this tutorial, I will guide you how to take an existing chatroom, and add Wat
 
 1. Clone the [Kitura Chat Server](https://github.com/IBM-Swift/Kitura-Chat-Server)
 
-    ```git clone https://github.com/IBM-Swift/Kitura-Chat-Server```
+    ```
+    git clone https://github.com/IBM-Swift/Kitura-Chat-Server
+    ```
 
     Kitura Chat Server is an example application that shows how to build websocket-enabled applications with Kitura. It contains a combination of browser-side JavaScript code and a Kitura server that has a websocket endpoint.
 
@@ -90,10 +94,11 @@ In this tutorial, I will guide you how to take an existing chatroom, and add Wat
     In your Package.swift file, add to the bottom of the list of dependencies the following library:
    
     ```swift
-    .Package(url: "https://github.com/watson-developer-cloud/swift-sdk", majorVersion: 0)
+    .Package(url: "https://github.com/watson-developer-cloud/swift-sdk", 
+             majorVersion: 0)
     ```
 
-3. In the `Source/KituraChatServer/ChatService.swift` import the Conversation service modules:
+3. In the Source/KituraChatServer/ChatService.swift, import the Conversation service modules:
 
     ```swift
     import ConversationV1
@@ -166,17 +171,20 @@ In this tutorial, I will guide you how to take an existing chatroom, and add Wat
         let question = components[2]
         
         let request = MessageRequest(text: question, context)
-        conversation.message(withWorkspace: workspaceID, request: request, failure: failure) {
+        conversation.message(withWorkspace: workspaceID, 
+                             request: request, 
+                             failure: failure) {
             response in
             
             if response.output.text.count > 0 {
-                let text = response.output.text[0] {
-                    self.lockConnectionsLock()
-                    for (_, (_, connection)) in self.connections {
-                        connection.send(message: "\(MessageType.sentMessage.rawValue):Watson:\(text)")
-                    }
-                    self.unlockConnectionsLock()
-                }
+                let text = response.output.text[0]
+                self.lockConnectionsLock()
+                for (_, (_, connection)) in self.connections {
+                let message = "\(MessageType.sentMessage.rawValue):Watson:\(text)"
+                connection.send(message: message)
+                self.unlockConnectionsLock()
+            }
+                    
             }
         }
     }
