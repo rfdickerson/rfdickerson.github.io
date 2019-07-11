@@ -4,4 +4,6 @@ title: About Me
 permalink: /about/
 ---
 
-I am a software developer lead at IBM Cloud in Austin, TX and focused on the developer experience for cloud application development. Before working in industry, I taught computer science at the University of Texas and the College of William and Mary. I earned a PhD in Computer Science from the University of Virginia in 2013.
+Hi! I am a Machine Learning Engineer at Vrbo's Data Science team. I am interested in various applications of machine learning and currently focused on vacation rentals and travel. I am focused on helping data science and development teams with challenges related to deploying machine learning models to production. I have worked on various forms of supervised learning, deep learning, sequence models, big data and parallel computing, natural language processing, and image classification tasks.
+
+I am an experienced software engineer and computer scientist with a PhD in Computer Science. I currently have over 25 peer-reviewed publications in areas of machine learning, mobile computing, and sensor networks. Previously, as an instructor and researcher, I was on the faculty of Computer Science at University of Texas Austin and before that College of William and Mary teaching Data Structures and Algorithms and other core computer science courses.
